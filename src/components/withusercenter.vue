@@ -78,7 +78,7 @@
       else if(routeName == 'usercenter') this.active = 4;
 
       this.includes = bus.includes;
-      //flag0添加,1删除
+      //flag0添加,1删除,``
       bus.$on('change', (val,flag)=> {
         let index = this.includes.indexOf(val);
         if(index!=-1 && flag) this.includes.splice(index,1);
